@@ -1,0 +1,88 @@
+<template>
+  <div id="app" class="bg-gray-100 bg-gradient-to-r dark:from-slate-900 dark:via-purple-900 dark:to-slate-900 dark:text-gray-300">
+    <Head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>{{ name }} - Portfolio</title>
+      <link rel="stylesheet" href="./public/output.css" type="text/css"/>
+      <link rel="icon" :href=avatar_url>
+    </Head>
+
+    <header class="header md:sticky top-0 bg-gray-900 shadow w-full py-4 px-6 bg-opacity-80 bg-blur z-10 relative">
+      <nav class="flex items-center justify-between">
+        <div class="text-2xl font-bold text-white dark:text-gray-300">{{ name }}</div>
+        <Links/>
+      </nav>
+    </header>
+
+    <Carousel/>
+
+    <main class="max-w-6xl mx-auto py-2 sm:px-8 px-4 z-2">
+      <section id="about" class="md:mb-24 mb-16 relative">
+        <span class="text-3xl font-bold mb-4 text-gray-800 dark:text-gray-900">About Me</span>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <div class="w-full sm:w-1/3 px-4" style="position: relative; z-index: 2;">
+            <img id="profilePicture" class="rounded-full mx-auto mb-4" :alt=name :src="avatar_url"/>
+          </div>
+
+          <div
+              class="w-full sm:w-2/3 dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-100"
+              id="aboutText">
+            <p class="text-lg">
+              <AboutMe/>
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="certificates">
+        <h2 class="text-3xl font-bold mb-4">Certificates</h2>
+        <div id="certificateList" class="grid sm:grid-cols-2 md:grid-cols-6 gap-4">
+          <Certificates/>
+        </div>
+      </section>
+
+      <template>
+        <section id="repositories" class="mt-8">
+          <h2 class="text-3xl font-bold mb-4">Repositories</h2>
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <RepoItems/>
+          </div>
+        </section>
+      </template>
+
+      <section id="aspirations" class="mt-8">
+        <Aspirations/>
+      </section>
+
+    </main>
+
+    <footer>
+      <Footer :name="name"/>
+    </footer>
+
+    <div id="modal">
+      <!-- Modal content -->
+    </div>
+  </div>
+</template>
+
+<script>
+import RepoItem from "~/components/RepoItems.vue";
+
+export default {
+  name: 'App',
+  components: {RepoItem},
+  data() {
+    return {
+      name: 'Justin Jongstra',
+      avatar_url: 'https://avatars.githubusercontent.com/u/85618156?v=4',
+    };
+  },
+};
+</script>
+
+<style>
+/* Your CSS styles */
+</style>
