@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-100 bg-gradient-to-r dark:from-slate-900 dark:via-purple-900 dark:to-slate-900 dark:text-gray-300">
+  <div id="app" class="bg-gradient-to-r dark:from-black dark:via-purple-900 dark:to-black dark:text-gray-300 from-gray-100 via-purple-200 to-gray-100 text-gray-900">
     <Head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,7 +19,7 @@
 
     <main class="max-w-6xl mx-auto py-2 sm:px-8 px-4 z-2">
       <section id="about" class="md:mb-24 mb-16 relative">
-        <span class="text-3xl font-bold mb-4 text-gray-800 dark:text-gray-900">About Me</span>
+        <span class="text-3xl font-bold mb-4 text-gray-800 dark:text-gray-300">About Me</span>
         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
           <div class="w-full sm:w-1/3 px-4" style="position: relative; z-index: 2;">
             <img id="profilePicture" class="rounded-full mx-auto mb-4" :alt=name :src="avatar_url"/>
@@ -70,14 +70,14 @@
 
 <script>
 import RepoItem from "~/components/RepoItems.vue";
+import { FULL_NAME, PROFILE_PIC_URL } from '~/config.js';
 
 export default {
-  name: 'App',
   components: {RepoItem},
   data() {
     return {
-      name: 'Justin Jongstra',
-      avatar_url: 'https://avatars.githubusercontent.com/u/85618156?v=4',
+      name: FULL_NAME,
+      avatar_url: PROFILE_PIC_URL,
     };
   },
 };
