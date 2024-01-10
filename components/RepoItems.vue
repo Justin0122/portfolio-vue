@@ -5,18 +5,19 @@
         <RepoItem :repo="repo"/>
       </div>
       <div v-if="repos.length === 0">
-        <p id="notFound" class="text-lg">Loading...</p>
+        <p id="notFound" class="text-lg">{{ loadingText }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import {onMounted, ref} from 'vue';
+import { ref } from 'vue';
 import RepoItem from "~/components/RepoItem.vue";
 import { BASE_URL } from '~/config.js';
 
 const repos = ref([]);
+const loadingText = ref('Loading...');
 
 onMounted(async () => {
   try {
