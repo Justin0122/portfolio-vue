@@ -1,11 +1,19 @@
 <template>
-  <div id="app" class="bg-gradient-to-r dark:from-black dark:via-purple-900 dark:to-black dark:text-gray-300 from-gray-100 via-purple-200 to-gray-100 text-gray-900">
+  <div id="app" class="bg-gradient-to-r dark:from-black dark:via-purple-900 dark:to-black dark:text-gray-300 from-gray-100 via-purple-400 to-gray-100 text-gray-900">
     <Head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>{{ name }} - Portfolio</title>
       <link rel="stylesheet" href="./public/output.css" type="text/css"/>
       <link rel="icon" :href=avatar_url>
+
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" :content="`${name} - Portfolio`" />
+      <meta property="og:description" :content="`Hi! I'm ${name}, a full stack developer from the Netherlands. Check out my portfolio!`" />
+      <meta property="og:image" content="/img.png" />
+      <meta property="og:url" :content="`https://${name.split(' ').join('').toLowerCase()}.nl`" />
+      <meta property="og:site_name" :content="`${name} - Portfolio`" />
+
     </Head>
 
     <header class="header md:sticky top-0 bg-gray-900 shadow w-full py-4 px-6 bg-opacity-80 bg-blur z-10 relative">

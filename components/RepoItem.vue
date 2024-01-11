@@ -1,6 +1,6 @@
 <template>
   <div
-      class="repo-card p-4 rounded-md mb-4 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out dark:hover:bg-gray-800 bg-opacity-20 bg-gray-900 hover:bg-opacity-100 dark:hover:text-white cursor-default flex flex-col relative hover:bg-gray-600 hover:scale-105 transform hover:text-white min-h-48"
+      class="repo-card p-4 rounded-md mb-4 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out dark:hover:bg-gray-800 bg-opacity-20 bg-gray-900 hover:bg-opacity-100 dark:hover:text-white cursor-default flex flex-col relative hover:bg-green-400 hover:scale-105 transform hover:text-gray-700 min-h-48"
       :class="{'bg-gray-100 dark:bg-gray-900': repo.name === 'Error fetching repositories'}">
     <div>
       <a :href="repo.repo_url" target="_blank" class="text-lg font-bold hover:underline">{{ repo.name }}</a>
