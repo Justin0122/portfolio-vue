@@ -9,7 +9,7 @@
       </div>
     </div>
     <p class="text-base">{{ repo.description }}</p>
-    <div class="languages flex flex-row flex-wrap bottom-0 absolute mb-2">
+    <div class="languages flex flex-row flex-wrap bottom-0 mb-2 mt-auto">
         <span v-for="(value, key) in repo.languages" :key="key"
               :class="`text-xs dark:text-gray-800 rounded-full px-2 py-1 mr-1 mb-1 ${getLanguageColor(key)}`">
           {{ key }}

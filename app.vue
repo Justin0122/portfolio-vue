@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gradient-to-r dark:from-black dark:via-purple-900 dark:to-black dark:text-gray-300 from-gray-100 via-purple-400 to-gray-100 text-gray-900">
+  <div id="app" class="bg-gradient-to-b dark:from-black dark:via-purple-900 dark:to-black dark:text-gray-300 from-gray-100 via-purple-400 to-gray-100 text-gray-900 sm:bg-gradient-to-r sm:dark:from-black sm:dark:via-purple-900 sm:dark:to-black sm:dark:text-gray-300 sm:from-gray-100 sm:via-purple-400 sm:to-gray-100 sm:text-gray-900">
     <Head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
