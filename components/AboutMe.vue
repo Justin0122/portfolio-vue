@@ -1,11 +1,11 @@
 <template>
-  <div class="dark:text-gray-300 text-gray-800">
-    Welcome to my portfolio! I've designed this minimalistic space to showcase my work.
+  <div class="dark:text-gray-300 text-gray-800 text-md">
+    Hello, I'm <span class="font-bold underline text-lg">Justin Jongstra</span>, a {{ age }}-year-old software developer from the Netherlands.
     <br><br>
     I'm currently pursuing my MBO (VET) Software Developer diploma at
     <a href="https://www.rijnijssel.nl/"
        class="focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 underline hover:no-underline">
-      <span class="text-orange-400 dark:text-orange-500">Rijn</span><span class="text-purple-400 dark:text-purple-500">IJssel</span>
+      <span class="text-orange-500">Rijn</span><span class="text-purple-500">IJssel</span>
     </a>.
     I'm deeply passionate about technologies like Laravel, Livewire, and Tailwind CSS, and I'm always eager to expand my
     expertise in these areas.
@@ -28,7 +28,9 @@
 
 <script setup>
 import {onMounted} from 'vue';
-import { BASE_URL } from '~/config.js';
+import {BASE_URL} from '~/config.js';
+
+const age = Math.floor((new Date() - new Date(2001, 11, 22)) / 3.15576e+10);
 
 onMounted(async () => {
   try {
