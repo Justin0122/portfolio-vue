@@ -1,5 +1,6 @@
 <template>
-  <div id="app" class="bg-gradient-to-b dark:from-black dark:via-purple-900 dark:to-black dark:text-gray-300 from-gray-100 via-purple-400 to-gray-100 text-gray-900 sm:bg-gradient-to-r sm:dark:from-black sm:dark:via-purple-900 sm:dark:to-black sm:dark:text-gray-300 sm:from-gray-100 sm:via-purple-400 sm:to-gray-100 sm:text-gray-900">
+  <div id="app"
+       class="bg-gradient-to-b dark:from-black dark:via-purple-900 dark:to-black dark:text-gray-300 from-gray-100 via-purple-400 to-gray-100 text-gray-900 sm:bg-gradient-to-r sm:dark:from-black sm:dark:via-purple-900 sm:dark:to-black sm:dark:text-gray-300 sm:from-gray-100 sm:via-purple-400 sm:to-gray-100 sm:text-gray-900">
     <Head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,11 +9,21 @@
       <link rel="icon" :href=avatar_url>
 
       <meta property="og:type" content="website"/>
-      <meta property="og:title" :content="`${name} - Portfolio`" />
-      <meta property="og:description" :content="`Hi! I'm ${name}, a full stack developer from the Netherlands. Check out my portfolio!`" />
-      <meta property="og:image" content="/img.png" />
-      <meta property="og:url" :content="`https://${name.split(' ').join('').toLowerCase()}.nl`" />
-      <meta property="og:site_name" :content="`${name} - Portfolio`" />
+      <meta property="og:title" :content="`${name} - Portfolio`"/>
+      <meta property="og:description"
+            :content="`Hi! I'm ${name}, a full stack developer from the Netherlands. Check out my portfolio!`"/>
+      <meta property="og:image" content="/img.png"/>
+      <meta property="og:image:alt" :content="`${name} - Portfolio`"/>
+      <meta property="og:url" :content="`https://${name.split(' ').join('').toLowerCase()}.nl`"/>
+      <meta property="og:site_name" :content="`${name} - Portfolio`"/>
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:site" content="@justinjongstra"/>
+      <meta name="twitter:creator" content="@justinjongstra"/>
+      <meta name="twitter:title" :content="`${name} - Portfolio`"/>
+      <meta name="twitter:description"
+            :content="`Hi! I'm ${name}, a full stack developer from the Netherlands. Check out my portfolio!`"/>
+      <meta name="twitter:image" content="/img.png"/>
+      <meta name="twitter:image:alt" :content="`${name} - Portfolio`"/>
 
     </Head>
 
@@ -37,7 +48,7 @@
               class="w-full sm:w-2/3 dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-100"
               id="aboutText">
             <p class="text-lg">
-              <AboutMe/>
+              <AboutMe />
             </p>
           </div>
 
