@@ -23,6 +23,10 @@
       url: 'https://packagist.org/users/Justin0122/',
     },
     {
+      name: 'Npm',
+      url: 'https://www.npmjs.com/~justin0122',
+    },
+    {
       name: 'Mailto',
       url: 'mailto:justin@justinjongstra.nl',
     }
