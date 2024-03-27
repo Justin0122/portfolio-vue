@@ -2,7 +2,7 @@
   <a id="glitch"
      :class="{'bg-gray-100 dark:bg-gray-900': repo.name === 'Error fetching repositories'}"
      :href="repo.repo_url"
-      class="repo-card rounded-md mb-4 shadow-md hover:shadow-lg transition-all duration-500 ease-in-out dark:hover:bg-gray-800 bg-opacity-20 bg-red-900 hover:bg-opacity-100 dark:hover:text-cyan-300 flex flex-col relative hover:bg-green-400 transform hover:text-gray-900 min-h-48 border-red-800 border-2 hover:border-red-800"
+      class="repo-card rounded-md mb-4 shadow-md hover:shadow-lg transition-all duration-500 ease-in-out dark:hover:bg-gray-800 bg-opacity-20 bg-red-900 hover:bg-opacity-100 hover:text-cyan-300 flex flex-col relative hover:bg-red-400 transform min-h-48 border-red-800 border-2 hover:border-red-800"
      target="_blank">
     <div>
       <div>
@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="dates text-gray-500 text-sm float-left pl-4 flex flex-col">
-        <span class="text-gray-800 dark:text-gray-400 text-sm mr-4">Updated {{ formatDate(repo.updated_at) }}</span>
+        <span class="text-gray-200 dark:text-gray-400 text-sm mr-4">Updated {{ formatDate(repo.updated_at) }}</span>
       </div>
     </div>
     <p class="p-4 text-base text-yellow-500 mt-7">{{ repo.description }}</p>
@@ -96,12 +96,13 @@ function addGlitchEffect() {
 
 <style lang="scss">
 .repo-card:hover {
-  background-color: rgba(186, 127, 239, 0.77);
-  background-image: radial-gradient(at 100% 100%, rgba(255, 34, 127, 0.76) 0, transparent 67%), radial-gradient(at 16% 19%, rgba(155, 106, 234, 0.77) 0, transparent 85%);
+  background-color: rgb(97, 28, 32);
+  background-image: radial-gradient(at 100% 100%, rgba(150, 5, 44, 0.76) 0, transparent 67%), radial-gradient(at 16% 19%, rgb(97, 28, 32) 0, transparent 85%);
   background-position: center center;
-  -webkit-box-shadow: 8px 11px 21px -3px rgba(102, 255, 125, 1);
-  -moz-box-shadow: 8px 11px 21px -3px rgba(102, 255, 125, 1);
-  box-shadow: 8px 11px 21px -3px rgba(102, 255, 125, 1);
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 8px 11px 21px -3px rgba(244, 224, 0, 0.76);
+  -moz-box-shadow: 8px 11px 21px -3px rgba(255, 224, 26, 0.76);
+  box-shadow: 8px 11px 21px -3px rgba(255, 235, 107, 0.76);
 }
 
 @media (prefers-color-scheme: dark) {

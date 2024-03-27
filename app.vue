@@ -27,7 +27,7 @@
 
           <div
               id="aboutText"
-              class="w-full sm:w-2/3 dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-100 border-yellow-300 border-2 hover:border-yellow-500 transition-all duration-500 ease-in-out dark:hover:bg-gray-800 dark:hover:border-yellow-400 hover:drop-shadow-lg hover:shadow-lg hover:shadow-yellow-700">
+              class="w-full sm:w-2/3 dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-700 border-yellow-300 border-2 hover:border-yellow-500 transition-all duration-500 ease-in-out dark:hover:bg-gray-800 dark:hover:border-yellow-400 hover:drop-shadow-lg hover:shadow-lg hover:shadow-yellow-700">
             <p class="text-lg">
               <AboutMe/>
             </p>
@@ -39,7 +39,7 @@
       <section id="certificates">
         <h2 :class="addGlitchEffect()" class="text-3xl font-bold mb-4">Certificates</h2>
         <div id="certificateList"
-             class="w-full grid sm:grid-cols-2 md:grid-cols-6 gap-4 dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-100 border-yellow-300 border-2 hover:border-yellow-500 transition-all duration-500 ease-in-out dark:hover:bg-gray-800 dark:hover:border-yellow-400 hover:drop-shadow-lg hover:shadow-lg hover:shadow-yellow-700">
+             class="w-full grid sm:grid-cols-2 md:grid-cols-6 gap-4 dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-700 border-yellow-300 border-2 hover:border-yellow-500 transition-all duration-500 ease-in-out dark:hover:bg-gray-800 dark:hover:border-yellow-400 hover:drop-shadow-lg hover:shadow-lg hover:shadow-yellow-700">
           <Certificates/>
         </div>
       </section>
@@ -48,7 +48,7 @@
         <section id="repositories" class="mt-8">
           <h2 :class="addGlitchEffect()" class="text-3xl font-bold mb-4">Repositories</h2>
           <div
-              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-100 border-yellow-300 border-2 hover:border-yellow-500 transition-all duration-500 ease-in-out dark:hover:border-yellow-400 hover:drop-shadow-lg hover:shadow-lg hover:shadow-yellow-700">
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-700 border-yellow-300 border-2 hover:border-yellow-500 transition-all duration-500 ease-in-out dark:hover:border-yellow-400 hover:drop-shadow-lg hover:shadow-lg hover:shadow-yellow-700">
             <RepoItems/>
           </div>
         </section>
@@ -57,7 +57,7 @@
       <section id="aspirations" class="my-8">
         <h2 :class="addGlitchEffect()" class="text-3xl font-bold mb-4">Aspirations</h2>
         <div
-            class="w-full dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-100 border-yellow-300 border-2 hover:border-yellow-500 transition-all duration-500 ease-in-out dark:hover:bg-gray-800 dark:hover:border-yellow-400 hover:drop-shadow-lg hover:shadow-lg hover:shadow-yellow-700">
+            class="w-full dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-700 border-yellow-300 border-2 hover:border-yellow-500 transition-all duration-500 ease-in-out dark:hover:bg-gray-800 dark:hover:border-yellow-400 hover:drop-shadow-lg hover:shadow-lg hover:shadow-yellow-700">
           <Aspirations/>
         </div>
       </section>

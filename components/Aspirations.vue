@@ -1,6 +1,6 @@
 <template>
   <div>
-      <p class="text-gray-700 dark:text-gray-300 mb-4">
+      <p class="mb-4">
         I'm passionate about becoming a Full-Stack Laravel Developer. Currently, I'm focused on enhancing my skills in PHP, JavaScript, and C++, along with mastering Laravel, Livewire, and Tailwind CSS. I'm also exploring microcontrollers as a side interest.
         <br><br>
         My goal is to build innovative web applications that provide seamless user experiences and solve real-world problems.
