@@ -2,13 +2,13 @@
   <div class="flex flex-col justify-center items-center">
     <div v-for="(certificate, index) in certificates" :key="index">
       <a :href="certificate.url"
-         target="_blank"
+         class="rounded-lg bg-blur h-36 object-cover hover:opacity-90 transition duration-300 hover:scale-105 ease-in-out"
          rel="noopener noreferrer"
-         class="rounded-lg bg-blur h-36 object-cover hover:opacity-80 transition duration-300 hover:scale-105 ease-in-out">
+         target="_blank">
         <img
-            :src="certificate.imgUrl"
             :alt="certificate.name"
-            class="rounded-lg bg-blur h-36 object-cover hover:opacity-80 transition duration-300 hover:scale-105 ease-in-out">
+            :src="certificate.imgUrl"
+            class="rounded-lg bg-blur h-36 object-cover hover:opacity-90 transition duration-300 hover:scale-105 ease-in-out">
       </a>
     </div>
   </div>
