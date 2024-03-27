@@ -54,24 +54,19 @@
         </section>
       </template>
 
-      <section id="aspirations" class="mt-8">
+      <section id="aspirations" class="my-8">
         <h2 :class="addGlitchEffect()" class="text-3xl font-bold mb-4">Aspirations</h2>
         <div
             class="w-full dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-50 rounded-lg p-4 shadow bg-blur cursor-default bg-gray-100 border-yellow-300 border-2 hover:border-yellow-500 transition-all duration-500 ease-in-out dark:hover:bg-gray-800 dark:hover:border-yellow-400 hover:drop-shadow-lg hover:shadow-lg hover:shadow-yellow-700">
           <Aspirations/>
         </div>
       </section>
-
     </main>
-
     <footer>
       <Footer :name="name"/>
     </footer>
-
-    <div id="modal">
-      <!-- Modal content -->
-    </div>
   </div>
+
   <HeadComponent/>
 
 </template>
