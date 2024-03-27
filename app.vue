@@ -240,10 +240,6 @@ function glitchText(text) {
   }
 }
 
-.blink {
-  opacity: 1;
-  animation: blink 1s linear infinite;
-}
 
 #glitch:hover {
   animation: flicker 1s infinite;
@@ -389,6 +385,12 @@ function glitchText(text) {
   }
 }
 @media (min-width:801px){
+
+.blink {
+  opacity: 1;
+  animation: blink 1s linear infinite;
+}
+
 #glitch-text-app::before,
 #glitch-text-app::after {
   animation-iteration-count: infinite;
